@@ -1,0 +1,15 @@
+
+services:
+
+  httpd:
+    ports: [ 8080:80 ]
+    volumes:
+     - .:/usr/local/apache2/htdocs
+
+  tailwindcss:
+    volumes:
+      - .:/project
+    command: [ '-i', 'src/source.css', '-o', 'style.css', '--watch', '--poll' ]
+    stdin_open: true
+    tty: true
+

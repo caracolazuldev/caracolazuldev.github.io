@@ -1,0 +1,4 @@
+
+services:
+  httpd:
+    image: httpd:latest
