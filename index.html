@@ -12,8 +12,7 @@
   <meta name="author" content="pixelcave" />
 
   <!-- Icons -->
-  <link rel="icon" href="https://cdn.pixelcave.com/favicon.svg" sizes="any" type="image/svg+xml" />
-  <link rel="icon" href="https://cdn.pixelcave.com/favicon.png" type="image/png" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
 
   <!-- Inter web font from bunny.net (GDPR compliant) -->
   <link rel="preconnect" href="https://fonts.bunny.net" />
@@ -54,18 +53,18 @@
         <header id="page-header" class="relative flex flex-none items-center py-10">
           <div
             class="container mx-auto flex flex-col space-y-6 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:space-y-0 lg:px-10 xl:max-w-6xl">
-            <div>
-              <a href=""
-                class="group inline-flex items-center gap-2 text-lg font-bold text-gray-800 transition hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
-                  class="hi-mini hi-arrows-up-down inline-block size-5 rotate-45 text-blue-500 transition group-hover:rotate-90">
-                  <path fill-rule="evenodd"
-                    d="M2.24 6.8a.75.75 0 0 0 1.06-.04l1.95-2.1v8.59a.75.75 0 0 0 1.5 0V4.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0L2.2 5.74a.75.75 0 0 0 .04 1.06Zm8 6.4a.75.75 0 0 0-.04 1.06l3.25 3.5a.75.75 0 0 0 1.1 0l3.25-3.5a.75.75 0 1 0-1.1-1.02l-1.95 2.1V6.75a.75.75 0 0 0-1.5 0v8.59l-1.95-2.1a.75.75 0 0 0-1.06-.04Z"
-                    clip-rule="evenodd" />
-                </svg>
+            <div class="relative">
+              <a href="#" class="flex items-center gap-2 text-lg font-bold text-gray-800 hover:text-black">
+                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-100 transition-transform hover:rotate-120">
+                  <img 
+                    class="w-full h-full object-cover"
+                    src="assets/spiral-gradiant.svg" 
+                  />
+                </div>
                 <span>CaracolAzul Dev</span>
               </a>
             </div>
+            
             <nav class="space-x-4 sm:space-x-6">
               <a href="javascript:void(0)" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
                 <span>Features</span>
