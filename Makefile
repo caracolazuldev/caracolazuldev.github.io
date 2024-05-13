@@ -1,5 +1,4 @@
-export DEBUG=1
--include decomposer.mk
+include decomposer.mk
 
 # # #
 # Jobs
