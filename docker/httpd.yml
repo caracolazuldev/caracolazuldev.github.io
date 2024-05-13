@@ -1,4 +1,6 @@
 
 services:
   httpd:
-    image: httpd:latest
+    image: dev.caracolazul.httpd-dev:v1.0
+    build:
+      context: docker/httpd

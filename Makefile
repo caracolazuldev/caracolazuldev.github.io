@@ -9,6 +9,3 @@ export DEBUG=1
 # # #
 # Docker Images
 #
-
-docker/httpd/httpd.conf:
-	docker run --rm httpd:latest cat /usr/local/apache2/conf/httpd.conf > $@
