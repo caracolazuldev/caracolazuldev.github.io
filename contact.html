@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>@CaracolAzul.dev ~ Contact Us</title>
+
+  <meta name="description" content="Contact Us" />
+  <meta name="author" content="CaracolAzul" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon-light.png" type="image/png" />
+  <script src="https://kit.fontawesome.com/8241f94dec.js" crossorigin="anonymous"></script>
+
+  <!-- Inter web font from bunny.net (GDPR compliant) -->
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS Play CDN (mainly for development/testing purposes) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- Tailwind CSS v3 Configuration -->
+  <script>
+    const defaultTheme = tailwind.defaultTheme;
+    const colors = tailwind.colors;
+    const plugin = tailwind.plugin;
+
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", ...defaultTheme.fontFamily.sans],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- Page Container -->
+  <div id="page-container" class="mx-auto flex min-h-screen w-full flex-col bg-gray-100">
+    <!-- Page Content -->
+    <main id="page-content" class="flex max-w-full flex-auto flex-col">
+      <!-- Hero -->
+      <div class="relative bg-white">
+        <div class="absolute inset-0 -skew-y-3 bg-gradient-to-t from-amber-100 to-white"></div>
+        <!-- Header -->
+        <header id="page-header" class="relative flex flex-none items-center py-10">
+          <div
+            class="container mx-auto flex flex-col space-y-6 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:space-y-0 lg:px-10 xl:max-w-6xl">
+            <div class="relative">
+              <a href="/" class="flex items-center gap-2 text-lg font-bold text-gray-800 hover:text-black">
+                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-100 transition-transform hover:rotate-180">
+                  <img class="w-full h-full object-cover" src="assets/spiral-gradient-light.svg" />
+                </div>
+                <span>CaracolAzul Dev</span>
+              </a>
+            </div>
+
+            <!-- <nav class="space-x-4 sm:space-x-6">
+              <a href="#architecture" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+                <span>Architecture</span>
+              </a>
+              <a href="#strategy" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+                <span>Strategy</span>
+              </a>
+              <a href="#success" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+                <span>Teams</span>
+              </a>
+              <a href="javascript:void(0)" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+                <span>Contact</span>
+              </a>
+            </nav> -->
+            <div class="hidden sm:block">
+              <a href="/login"
+                class="inline-flex items-center justify-center gap-2 rounded border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-5 text-gray-700 hover:border-gray-300 hover:bg-gray-100 hover:text-gray-700 active:border-gray-200 active:bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
+                  class="hi-mini hi-arrow-right-end-on-rectangle inline-block size-5 opacity-50">
+                  <path fill-rule="evenodd"
+                    d="M17 4.25A2.25 2.25 0 0 0 14.75 2h-5.5A2.25 2.25 0 0 0 7 4.25v2a.75.75 0 0 0 1.5 0v-2a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v11.5a.75.75 0 0 1-.75.75h-5.5a.75.75 0 0 1-.75-.75v-2a.75.75 0 0 0-1.5 0v2A2.25 2.25 0 0 0 9.25 18h5.5A2.25 2.25 0 0 0 17 15.75V4.25Z"
+                    clip-rule="evenodd" />
+                  <path fill-rule="evenodd"
+                    d="M1 10a.75.75 0 0 1 .75-.75h9.546l-1.048-.943a.75.75 0 1 1 1.004-1.114l2.5 2.25a.75.75 0 0 1 0 1.114l-2.5 2.25a.75.75 0 1 1-1.004-1.114l1.048-.943H1.75A.75.75 0 0 1 1 10Z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span>Login</span>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- END Header -->
+
+      </div>
+      <!-- END Hero -->
+
+
+      <!-- Contact Section -->
+      <section id="Contact">
+        <div class="bg-white">
+          <div class="container mx-auto space-y-10 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-4xl">
+            <!-- Heading -->
+            <div class="text-center">
+              <h2 class="mb-4 text-3xl font-black md:text-5xl">
+                Contact Us
+              </h2>
+              <!-- <h3 class="mx-auto text-lg font-medium text-gray-600 md:text-xl md:leading-relaxed lg:w-2/3">
+              Assure your development project delivers.
+            </h3> -->
+            </div>
+            <!-- END Heading -->
+
+            <!-- Section body -->
+            <div
+              class="relative flex flex-col rounded-lg border-2 border-blue-400 bg-blue-50 shadow-sm hover:border-blue-500 lg:mx-auto lg:w-96">
+
+              <div class="grow space-y-5 p-5 lg:space-y-6 lg:p-6">
+                <ul class="space-y-4 text-sm lg:text-base">
+                  <li class="flex items-center justify-center gap-2">
+
+                    <form id="my-form" action="https://formspree.io/f/moqgbypv" method="POST">
+                      <label>Email:</label>
+                      <input type="email" name="email" />
+                      <label>Message:</label>
+                      <input type="text" name="message" />
+                      <button id="my-form-button">Submit</button>
+                      <p id="my-form-status"></p>
+                    </form>
+                    
+                    <path fill-rule="evenodd"
+                      d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- END Section Body -->
+          </div>
+        </div>
+      </section>
+      <!-- END Success Section -->
+
+      <!-- Footer -->
+      <footer id="page-footer" class="bg-gradient-to-t from-blue-50 to-white">
+        <div
+          class="container mx-auto flex flex-col space-y-6 px-4 py-16 text-center text-sm md:flex-row md:justify-between md:space-y-0 md:text-left lg:px-8 lg:py-32 xl:max-w-6xl">
+          <nav class="space-x-2 sm:space-x-4">
+            <a href="/contact" class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+            <a href="https://www.linkedin.com/in/leftjoin/" target="_blank"
+              class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/ginkgomzd" target="_blank"
+              class="text-sm font-semibold text-gray-600 hover:text-gray-950">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </nav>
+          <div class="text-gray-500">
+            <span class="font-medium">CaracolAzul Dev</span> ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </div>
+        </div>
+      </footer>
+      <!-- END Footer -->
+    </main>
+    <!-- END Page Content -->
+  </div>
+  <!-- END Page Container -->
+</body>
+<script>
+  // JavaScript to handle smooth scrolling animation
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Smooth scroll to the target element
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      // Update the URL in the address bar without page reload
+      window.history.pushState(null, null, `#${targetId}`);
+    });
+  });
+</script>
+<script>
+  // Contact Form Submit
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+
+</html>
