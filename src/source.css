@@ -3,15 +3,43 @@
 @tailwind utilities;
 
 .rounded-full {
-	border-radius: 50%;
+  border-radius: 50%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+
+/* Animate the Caracol */
+
+/* Define the keyframes for the rotation animation */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .overflow-hidden {
-	overflow: hidden;
+
+  50% {
+    transform: rotate(180deg);
   }
-  
-  .object-cover {
-	object-fit: cover;
+
+  100% {
+    transform: rotate(0deg);
   }
-  
-  
+}
+
+/* Apply the animation to the image */
+.w-8:hover img {
+  animation: rotateAnimation .6s ease-in-out;
+}
+
+/* Apply the animation to the image on mobile and touch devices after 8 seconds */
+@media (hover: none) {
+  .w-8 img {
+    animation: rotateAnimation 1s ease-in-out 4s 2;
+  }
+}
