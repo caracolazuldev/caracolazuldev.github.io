@@ -110,7 +110,7 @@
             <!-- Heading -->
             <div class="text-center">
               <h2 class="mb-4 text-3xl font-black md:text-5xl">
-                Contact Us
+                Contact <span class="text-blue-600">Us</span>
               </h2>
               <!-- <h3 class="mx-auto text-lg font-medium text-gray-600 md:text-xl md:leading-relaxed lg:w-2/3">
               Assure your development project delivers.
@@ -123,23 +123,17 @@
               class="relative flex flex-col rounded-lg border-2 border-blue-400 bg-blue-50 shadow-sm hover:border-blue-500 lg:mx-auto lg:w-96">
 
               <div class="grow space-y-5 p-5 lg:space-y-6 lg:p-6">
-                <ul class="space-y-4 text-sm lg:text-base">
-                  <li class="flex items-center justify-center gap-2">
 
                     <form id="my-form" action="https://formspree.io/f/moqgbypv" method="POST">
-                      <label>Email:</label>
-                      <input type="email" name="email" />
-                      <label>Message:</label>
-                      <input type="text" name="message" />
-                      <button id="my-form-button">Submit</button>
+                      <label for="email" class="font-bold">Email:</label><br>
+                      <input type="email" name="email" class="my-2 w-full rounded-lg border-black"/><br>
+                      <label for="message" class="font-bold">Message:</label><br>
+                      <textarea rows="6" name="message" class="my-2 w-full rounded-lg border-black"></textarea><br>
+                      <button id="contact-us-submit" class="my-2 inline-flex items-center justify-center gap-2 rounded bg-blue-700 px-6 py-3 font-semibold leading-6 text-white transition hover:border-blue-800 hover:bg-blue-800 hover:text-white focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50 active:border-blue-700 active:bg-blue-700">Submit</button>
                       <p id="my-form-status"></p>
                     </form>
+                  
                     
-                    <path fill-rule="evenodd"
-                      d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
               </div>
             </div>
             <!-- END Section Body -->
@@ -179,25 +173,7 @@
   </div>
   <!-- END Page Container -->
 </body>
-<script>
-  // JavaScript to handle smooth scrolling animation
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
 
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      // Smooth scroll to the target element
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
-      });
-
-      // Update the URL in the address bar without page reload
-      window.history.pushState(null, null, `#${targetId}`);
-    });
-  });
-</script>
 <script>
   // Contact Form Submit
   var form = document.getElementById("my-form");
@@ -214,7 +190,7 @@
       }
     }).then(response => {
       if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = "Thanks for being in touch! We'll get back to you soon.";
         form.reset()
       } else {
         response.json().then(data => {
