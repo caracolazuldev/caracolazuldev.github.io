@@ -1,6 +1,6 @@
 
 services:
   tailwindcss:
-    image: d3fk/tailwindcss
+    image: d3fk/tailwindcss:v3
     ports:
       - 3000:3000
